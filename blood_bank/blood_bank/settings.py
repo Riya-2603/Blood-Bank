@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-c^2fnrmmc741e+kngp2zg)xgnjuo7g$72ks8h2d9s-f&zezx-a
 DEBUG = True
 
 # FIXED: Add localhost for development
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', 'riya6699.pythonanywhere.com']
+
 
 
 # Application definition
@@ -145,6 +146,7 @@ AUTH_USER_MODEL = 'users.CustomUser'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "riya6699.pythonanywhere.com"
 ]
 
 # ADDED: Additional CORS settings for development
@@ -207,6 +209,7 @@ SIMPLE_JWT = {
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "riya6699.pythonanywhere.com"
 ]
 
 # OPTIONAL: Disable CSRF for API endpoints (if you're using token auth)
