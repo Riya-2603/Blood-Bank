@@ -63,6 +63,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'blood_bank.urls'
@@ -171,6 +172,10 @@ CORS_ALLOWED_METHODS = [
     'PATCH',
     'POST',
     'PUT',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
 ]
 
 # FIXED: Better REST Framework configuration
