@@ -176,6 +176,7 @@ CORS_ALLOWED_METHODS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "riya6699.pythonanywhere.com"
 ]
 
 # FIXED: Better REST Framework configuration
